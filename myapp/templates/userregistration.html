@@ -1,0 +1,30 @@
+{% extends 'ADMINPAGE.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+
+<table class="table" style="color: aliceblue;">
+    <tr>
+        <td>Name</td><td><input type="text" name="t1" required></td>
+    </tr>
+    <tr>
+        <td>Email</td><td><input type="email" name="t2" required></td>
+    </tr>
+    <tr>
+        <td>Location</td><td><input type="text" name="t3" required></td>
+    </tr>
+    <tr>
+        <td>Phone</td><td><input type="text" name="t4" required></td>
+    </tr>
+    <tr>
+        <td>DOB</td><td><input type="text" name="t5" required></td>
+    </tr>
+    <tr>
+        <td>Password</td><td><input type="password" name="t6" required></td>
+    </tr>
+    <tr>
+        <td></td><td><input type="submit" name="b1" value="SUBMIT"></td>
+    </tr>
+</table>
+</form>
+{% endblock %}

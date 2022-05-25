@@ -1,0 +1,15 @@
+{% extends 'USERPAGE.html' %}
+{% block body %}
+<div >
+
+    <table>
+        <tr><th>TICKET NO</th><th>{{data.0.0}}</th></tr>
+        <tr><th>USERNAME</th><th>{{data.0.11}}</th></tr>
+        <tr><th>BUSNO</th><th>{{data.0.1}}</th></tr>
+        <tr><th>DATE</th><th>{{data.0.5}}</th></tr>
+        <tr><th>TIME</th><th>{{data.0.6}}</th></tr>
+        <tr><th>SET NO</th><th>{{data.0.8}}-{{data.0.9}}</th></tr>
+        
+    </table>
+</div>
+{% endblock %}

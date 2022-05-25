@@ -1,0 +1,9 @@
+{% extends 'ADMINPAGE.html' %}
+{% block body %}
+<table class="table" style="color: aliceblue;">
+    <tr><th>ID</th><th>NAME</th><th>TYPE</th><th>NO</th><th>Hospital</th></tr>
+    {% for d in data %}
+<tr><td>{{d.0}}</td><td>{{d.1}}</td><td>{{d.2}}</td><td>{{d.3}}</td><td>{{d.4}}</td><td><a href="busdelete/?id={{d.0}}">DELETE</a></td></tr>
+    {% endfor %}
+</table>
+{% endblock %}
